@@ -74,6 +74,22 @@
   width : 100%;
 }
     </style>
+    <style>
+        .google-slides-container{
+    position: relative;
+    width: 100%;
+    padding-top: 60%;
+    overflow: hidden;
+}
+
+.google-slides-container iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+    </style>
     <script>
         window.addEventListener("load", function() {
             setTimeout(function() {
@@ -87,6 +103,15 @@
     <!-- Quick CSS -->
     <link rel="stylesheet" href="assets/css/quick-website.css" id="stylesheet">
 </head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7FYXV7WF5W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7FYXV7WF5W');
+</script>
 
 <body>
     <!-- Preloader -->
@@ -197,8 +222,8 @@
 
         <div class=container>
             <h2>How does it work?</h2>
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://docs.google.com/presentation/d/e/2PACX-1vTOFb-DwwHPfGD65Ew1xkO9odtkdgStY2oRSB0VTZ02dYlXRuvN6SlyRV2kWLYUqt89VRmqbOSnrWTh/embed?start=false&amp;loop=false&amp;delayms=3000" allowfullscreen></iframe>
+            <div class="google-slides-container">
+                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTOFb-DwwHPfGD65Ew1xkO9odtkdgStY2oRSB0VTZ02dYlXRuvN6SlyRV2kWLYUqt89VRmqbOSnrWTh/embed?start=false&amp;loop=false&amp;delayms=3000" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
               </div>
              
 
